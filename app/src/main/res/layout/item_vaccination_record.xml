@@ -1,0 +1,33 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewVaccineName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Vaccine Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewDateAdministered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date Administered"
+        app:layout_constraintTop_toBottomOf="@id/textViewVaccineName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textViewDateOfDose"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date of Dose"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateAdministered"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
